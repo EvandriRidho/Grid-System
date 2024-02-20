@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Repeat untuk mengulang*/
+    /*grid-template-columns: max-content;*/
+    /*grid-template-columns: 1fr minmax(200px , 300px) 1fr;*/
+    grid-template-rows: 1fr;
+    grid-auto-rows: 2fr; /*untuk menentukan implisit grid*/
+    /*grid-auto-flow untuk menentukan hal selanjutnya jika kelebihan, defaultnya rows*/
+}
+
+.item {
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: lightcoral;
+}
