@@ -3,3 +3,4 @@
 2. Columns & Rows
 3. Spesial Keyword & Function
 4. Grid Area & Gap
+5. Grid Alignment
